@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+  --wh-: rgb(255,255,255);
+  --bk-: rgb(0,0,0);
+  --bl-: rgb(0,0,255);
+  --ry-: rgb(192,192,192);
+}
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  text-align: center;
+  fomt-family: "Roboto", subpixel-antialiased;
+}
+header {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfc853e0xEMgLXoBfKUDxXWN3Khqp3wqjzYg&usqp=CAU");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+img {
+  filter: drop-shadow(10px 10px 11px var(--wh-));
+  border-radius: 10px;
+  opacity: 0.9;
+  margin-right: 15pc;
+}
+h1 {
+  color: var(--wh-);
+  font-family: courier New;
+  letter-spacing: 8px;
+  text-shadow: 10px 1px 8px var(--bl-);
+  margin-right: 14pc;
+}
+.user-user, .fa{
+  border: none;
+  background-color: transparent;
+  color: var(--wh-);
+  transform: translate(130px, 37px);
+  font-size: 34px;
+}
+.menu-user {
+  display: none;
+  width:0;
+}
+#menu {
+  display: none;
+}
+#menu.active {
+  display: block;
+}
+a {
+  box-shadow: 1px 1px 18px var(--bl-);
+  font-size: 20px;
+}
+ul, a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: var(--wh-);
+  font-weight: bold;
+  border-radius: 18px;
+  gap: 20px;
+  position: relative;
+  bottom: 80px;
+  left: 13px;
+ }
+.sub_title_info {
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-decoration: underline 2px var(--bk-);
+  background-color: lightgray;
+}
+.container {
+  font-style: italic;
+  width: 100%;
+  white-space: pre-wrap;
+  overflow: hidden;
+  border-bottom: solid 1px;
+  margin-bottom: 1pc;
+  padding: 2pc 0 2pc 0;
+  font-size: 15px;
+}
+.btn {
+  border:none; 
+  margin: 3rem 0 5rem 0;
+  color: transparent;
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(to left, rgb(255,255,255,0), 57%, #c0c0c0);
+  -webkit-text-stroke: 1px var(--bk-);
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+footer {
+  background-color: var(--bk-);
+  color: var(--wh-);
+  font-size: 14px;
+}
